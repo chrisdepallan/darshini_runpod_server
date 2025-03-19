@@ -16,7 +16,7 @@ model = MBartForConditionalGeneration.from_pretrained(model_name)
 def read_root():
     return {"message": "Welcome to my FastAPI application!"}
 
-@app.post("/translate")
+@app.post("/run")
 def translate(request: TranslationRequest):
     try:
         # Tokenize the input text
