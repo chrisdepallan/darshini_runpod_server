@@ -7,7 +7,7 @@ WORKDIR /app
 COPY /my-fastapi-app/requirements.txt .
 
 # Install the dependencies
-RUN pip install --no-cache-dir -r /my-fastapi-app/requirements.txt
+RUN pip install  -r /my-fastapi-app/requirements.txt
 
 # Copy the application code
 COPY /my-fastapi-app/src /app/src
