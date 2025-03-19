@@ -4,10 +4,10 @@ FROM python:3.9
 WORKDIR /app
 
 # Copy the requirements file
-COPY requirements.txt .
+COPY /my-fastapi-app/requirements.txt .
 
 # Install the dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r /my-fastapi-app/requirements.txt
 
 # Copy the application code
 COPY /my-fastapi-app/src /app/src
