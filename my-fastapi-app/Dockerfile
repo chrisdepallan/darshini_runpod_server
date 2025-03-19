@@ -7,10 +7,10 @@ WORKDIR /app
 COPY /my-fastapi-app/requirements.txt .
 
 # Install the dependencies
-RUN pip install  -r /requirements.txt
+RUN pip install  -r /my-fastapi-app/requirements.txt
 
 # Copy the application code
-COPY /my-fastapi-app/src /src
+COPY /my-fastapi-app/src /app/src
 
 # Expose the port the app runs on
 EXPOSE 8000
